@@ -1,11 +1,4 @@
 = oaas_registry_api
 
-oaas_registry_api program.
+Shared API between the `oaas-registry`, and the `oaas-grpc` transport.
 
-== Installation
-
-
-[source,sh]
------------------------------------------------------------------------------
-pip install oaas_registry_api
------------------------------------------------------------------------------
