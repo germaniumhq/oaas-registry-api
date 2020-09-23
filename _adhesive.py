@@ -3,6 +3,7 @@ import germanium_py_exe  # type: ignore
 
 germanium_py_exe.pipeline(
     {
+        "run_mypy": False,
         "repo": "git@github.com:bmustiata/oaas_registry_api.git",
         "binaries": {
             "name": "Python 3.8 on Linux x64",
