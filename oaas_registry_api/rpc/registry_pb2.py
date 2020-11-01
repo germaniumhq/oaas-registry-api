@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     syntax="proto3",
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n\x0eregistry.proto"\xb9\x01\n\x15OaasServiceDefinition\x12\x11\n\tnamespace\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\x12.\n\x04tags\x18\x04 \x03(\x0b\x32 .OaasServiceDefinition.TagsEntry\x12\x11\n\tlocations\x18\x05 \x03(\t\x1a+\n\tTagsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01"\x1b\n\rOaasServiceId\x12\n\n\x02id\x18\x01 \x01(\t"F\n\x1aOaasResolveServiceResponse\x12(\n\x08services\x18\x01 \x03(\x0b\x32\x16.OaasServiceDefinition"/\n\x1dOaasUnregisterServiceResponse\x12\x0e\n\x06result\x18\x01 \x01(\x08\x32\xe0\x01\n\x0cOaasRegistry\x12\x42\n\x10register_service\x12\x16.OaasServiceDefinition\x1a\x16.OaasServiceDefinition\x12\x46\n\x0fresolve_service\x12\x16.OaasServiceDefinition\x1a\x1b.OaasResolveServiceResponse\x12\x44\n\x12unregister_service\x12\x0e.OaasServiceId\x1a\x1e.OaasUnregisterServiceResponseb\x06proto3',
+    serialized_pb=b'\n\x0eregistry.proto"\xc5\x01\n\x15OaasServiceDefinition\x12\x11\n\tnamespace\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\x12.\n\x04tags\x18\x04 \x03(\x0b\x32 .OaasServiceDefinition.TagsEntry\x12\x11\n\tlocations\x18\x05 \x03(\t\x12\n\n\x02id\x18\x06 \x01(\t\x1a+\n\tTagsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01"\x1b\n\rOaasServiceId\x12\n\n\x02id\x18\x01 \x01(\t"F\n\x1aOaasResolveServiceResponse\x12(\n\x08services\x18\x01 \x03(\x0b\x32\x16.OaasServiceDefinition"/\n\x1dOaasUnregisterServiceResponse\x12\x0e\n\x06result\x18\x01 \x01(\x08\x32\xe0\x01\n\x0cOaasRegistry\x12\x42\n\x10register_service\x12\x16.OaasServiceDefinition\x1a\x16.OaasServiceDefinition\x12\x46\n\x0fresolve_service\x12\x16.OaasServiceDefinition\x1a\x1b.OaasResolveServiceResponse\x12\x44\n\x12unregister_service\x12\x0e.OaasServiceId\x1a\x1e.OaasUnregisterServiceResponseb\x06proto3',
 )
 
 
@@ -77,8 +77,8 @@ _OAASSERVICEDEFINITION_TAGSENTRY = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=161,
-    serialized_end=204,
+    serialized_start=173,
+    serialized_end=216,
 )
 
 _OAASSERVICEDEFINITION = _descriptor.Descriptor(
@@ -184,6 +184,25 @@ _OAASSERVICEDEFINITION = _descriptor.Descriptor(
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
+        _descriptor.FieldDescriptor(
+            name="id",
+            full_name="OaasServiceDefinition.id",
+            index=5,
+            number=6,
+            type=9,
+            cpp_type=9,
+            label=1,
+            has_default_value=False,
+            default_value=b"".decode("utf-8"),
+            message_type=None,
+            enum_type=None,
+            containing_type=None,
+            is_extension=False,
+            extension_scope=None,
+            serialized_options=None,
+            file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
+        ),
     ],
     extensions=[],
     nested_types=[
@@ -196,7 +215,7 @@ _OAASSERVICEDEFINITION = _descriptor.Descriptor(
     extension_ranges=[],
     oneofs=[],
     serialized_start=19,
-    serialized_end=204,
+    serialized_end=216,
 )
 
 
@@ -236,8 +255,8 @@ _OAASSERVICEID = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=206,
-    serialized_end=233,
+    serialized_start=218,
+    serialized_end=245,
 )
 
 
@@ -277,8 +296,8 @@ _OAASRESOLVESERVICERESPONSE = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=235,
-    serialized_end=305,
+    serialized_start=247,
+    serialized_end=317,
 )
 
 
@@ -318,8 +337,8 @@ _OAASUNREGISTERSERVICERESPONSE = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=307,
-    serialized_end=354,
+    serialized_start=319,
+    serialized_end=366,
 )
 
 _OAASSERVICEDEFINITION_TAGSENTRY.containing_type = _OAASSERVICEDEFINITION
@@ -403,8 +422,8 @@ _OAASREGISTRY = _descriptor.ServiceDescriptor(
     index=0,
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
-    serialized_start=357,
-    serialized_end=581,
+    serialized_start=369,
+    serialized_end=593,
     methods=[
         _descriptor.MethodDescriptor(
             name="register_service",

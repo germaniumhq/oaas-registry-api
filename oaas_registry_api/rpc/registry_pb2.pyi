@@ -57,6 +57,7 @@ class OaasServiceDefinition(google___protobuf___message___Message):
     locations: google___protobuf___internal___containers___RepeatedScalarFieldContainer[
         typing___Text
     ] = ...
+    id: typing___Text = ...
     @property
     def tags(self) -> typing___MutableMapping[typing___Text, typing___Text]: ...
     def __init__(
@@ -67,10 +68,13 @@ class OaasServiceDefinition(google___protobuf___message___Message):
         version: typing___Optional[typing___Text] = None,
         tags: typing___Optional[typing___Mapping[typing___Text, typing___Text]] = None,
         locations: typing___Optional[typing___Iterable[typing___Text]] = None,
+        id: typing___Optional[typing___Text] = None,
     ) -> None: ...
     def ClearField(
         self,
         field_name: typing_extensions___Literal[
+            "id",
+            b"id",
             "locations",
             b"locations",
             "name",
