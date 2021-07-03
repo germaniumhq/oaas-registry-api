@@ -1,4 +1,7 @@
+package(default_visibility = ["PUBLIC"])
+
+
 python_library(
-  name="oaas_registry_api",
+  name="registry-api",
   srcs=glob(["oaas_registry_api/**/*.py"]),
 )
